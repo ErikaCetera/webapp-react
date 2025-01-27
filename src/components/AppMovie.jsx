@@ -1,3 +1,6 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
 const AppMovie = ({ movie }) => {
 
     const urlBe = import.meta.env.VITE_BACKEND_URL;
@@ -9,6 +12,9 @@ const AppMovie = ({ movie }) => {
                 <h3 className="card-title">{movie.title}</h3>
                 <h5 className="card-title">{movie.director}</h5>
                 <p className="card-text">{movie.abstract}</p>
+                <Link className="btn btn-success" to={`/movie/${movie.id}`}>
+         Dettagli
+        </Link>
             </div>
             </div>
         </>
