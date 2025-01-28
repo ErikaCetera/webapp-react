@@ -12,7 +12,7 @@ const AppMovie = ({ movie }) => {
                 <h3 className="card-title">{movie.title}</h3>
                 <h5 className="card-title">{movie.director}</h5>
                 <p className="card-text">{movie.abstract}</p>
-                <Link className="btn btn-success" to={`/movie/${movie.id}`}>
+                <Link className="btn btn-success" to={`/movies/${movie.id}`}>
          Dettagli
         </Link>
             </div>

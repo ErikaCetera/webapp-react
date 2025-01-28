@@ -7,19 +7,19 @@ import SingleMoviePage from "./pages/SingleMoviePage"
 
 const urlBE = import.meta.env.VITE_BACKEND_URL;
 
-const App = () =>{
+const App = () => {
 
 
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route element= {<AppLayout/>}>
-          <Route path = '/' element = {<HomePage/>}/>
-          <Route path="/movie">
+          <Route element={<AppLayout />}>
+            <Route path='/' element={<HomePage />} />
+            <Route path="/movies">
               <Route path="" element={<MoviesPage />} />
-              <Route path=":id" element={<SingleMoviePage />} />             
-          </Route>
+              <Route path=":id" element={<SingleMoviePage />} />
+            </Route>
           </Route>
         </Routes>
       </BrowserRouter>
